@@ -1,0 +1,49 @@
+.form-control, .btn {
+    min-height: 38px;
+    border-radius: 2px;
+}
+
+/* .clearfix {
+    margin-bottom: 40px
+} */
+
+.clearfix::after {
+    display: block;
+    clear: both;
+    content: "";
+}
+
+.content {
+    padding: 48px 0 96px 0;
+    font-size: 0.923rem;
+}
+
+.mb40 {
+    margin-bottom: 40px
+}
+
+.search-wrapper {
+    padding: 0 .6rem;
+    background-color: #fff;
+    border: solid 1px #ced4da;
+    border-radius: 0.3rem;
+}
+
+.search-wrapper .input-group .input-group-addon {
+    padding-right: 0;
+    padding-left: .5rem;
+    background-color: #fff;
+    border: 0;
+}
+
+.search-wrapper .ion-ios-search {
+    color: #adb5bd;
+    font-size: 1.384rem;
+}
+
+.search-wrapper .input-group .form-control {
+    border: 0;
+    box-shadow: none;
+}
+
+

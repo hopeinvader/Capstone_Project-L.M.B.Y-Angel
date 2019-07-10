@@ -1,0 +1,21 @@
+.navbarPD240 {
+    padding-left: 220px;
+}
+
+@media (max-width:1039px){
+    .navbarPD240 {
+        padding-left: 70px
+    }
+}
+
+@media (max-width:978px){
+    .navbarPD240 {
+        padding-left: 50px
+    }
+}
+
+@media (max-width:882px){
+    .navbarPD240 {
+        padding-left: 0px
+    }
+}

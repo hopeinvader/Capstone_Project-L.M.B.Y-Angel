@@ -1,0 +1,10 @@
+.list-group {
+    font-size: 1.076rem;
+}
+
+.list-group-item.active {
+    z-index: 2;
+    color: #fff;
+    background-color: #e9f8ff;
+    border-color: #e9f8ff;
+}

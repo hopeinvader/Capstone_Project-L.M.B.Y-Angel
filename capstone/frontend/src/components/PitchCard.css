@@ -1,0 +1,150 @@
+.mb-30 {
+    margin-bottom: 30px !important;
+}
+
+.projects.card, .companies .projects.company-card {
+    box-shadow: 0 0 8px rgba(0,0,0,0.3);
+    padding: 0;
+}
+
+.card, .companies .company-card {
+    margin-bottom: 30px;
+}
+
+.content {
+    padding: 48px 0 96px 0;
+    font-size: 0.923rem;
+}
+
+a {
+    background-color: transparent;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+.projects.card>.card-body, .companies .projects.company-card>.card-body {
+    position: relative;
+    top: -1.846rem;
+    /* height: 360px; */
+    height: 290px;
+    padding: 0;
+}
+
+@media (max-width: 767px){
+    .cardEntrepneurs{
+    height: 360px !important
+    }
+}
+
+.card-body {
+    flex: 1 1 auto;
+    padding: 1.538rem;
+}
+
+.cardInvestor {
+    height: 220px !important
+}
+
+.projects.card>.card-body>.company, .companies .projects.company-card>.card-body>.company {
+    height: 4.92rem;
+    padding: 0 1.538rem;
+    margin-bottom: 1.038rem;
+}
+
+.media {
+    display: flex;
+    align-items: flex-start;
+}
+
+.projects.card>.card-body>.company.media>img, .companies .projects.company-card>.card-body>.company.media>img {
+    border: 1px solid #fff;
+    border-radius: 3px;
+}
+
+img {
+    vertical-align: middle;
+    border-style: none;
+}
+
+.projects.card>.card-body>.company.media>.media-body, .companies .projects.company-card>.card-body>.company.media>.media-body {
+    padding: 36px 0 0 10px;
+}
+
+.media-body {
+    flex: 1;
+}
+
+.text-muted {
+    font-weight: 300;
+}
+
+.text-muted {
+    color: #242A5E !important;
+}
+
+.projects.card>.card-body>.card-title, .companies .projects.company-card>.card-body>.card-title {
+    font-size: 0.770rem;
+    line-height: 1.646rem;
+    height: 3.092rem;
+    padding: 0 1.538rem;
+    margin-bottom: 1.238rem;
+    overflow: hidden;
+}
+
+.card-title {
+    margin-bottom: 0.923rem;
+}
+
+.projects.card>.card-body>.card-title a, .companies .projects.company-card>.card-body>.card-title a {
+    color: #242A5E;
+    text-decoration: none;
+}
+
+.projects.card>.card-body>.description, .companies .projects.company-card>.card-body>.description {
+    margin-bottom: 1.238rem;
+    padding: 0 1.538rem;
+    font-size: 0.769rem;
+    line-height: 1.538rem;
+    height: 4.614rem;
+    color: rgba(36,42,94,0.4);
+    overflow: hidden;
+}
+
+.projects.card>.card-body>.achievement, .companies .projects.company-card>.card-body>.achievement {
+    /* padding: 0 1.538rem; */
+    padding-left: 24.608px;
+    padding-right: 24.608px;
+    height: 2.614rem;
+    font-weight: 600;
+    margin-bottom: 1.238rem;
+}
+
+.textCenter {
+    text-align: center;
+}
+
+.projects.card>.card-body>.status, .companies .projects.company-card>.card-body>.status {
+    height: 3.538rem;
+    /* border: 1px solid #f2f2f2; */
+    font-size: 1.076rem;
+    font-weight: 600;
+}
+
+.projects.card>.card-body>.achievement .solicit, .companies .projects.company-card>.card-body>.achievement .solicit {
+    font-size: 1.306rem;
+}
+
+.projects.card>.card-body>.achievement .solicit, .companies .projects.company-card>.card-body>.achievement .solicit {
+    font-size: 1.038rem;
+    color: #00A0E9;
+    white-space: nowrap;
+}
+
+.card-title2 {
+    font-size: 0.770rem;
+    line-height: 1.646rem;
+    color: #242A5E;
+    white-space: nowrap;
+}

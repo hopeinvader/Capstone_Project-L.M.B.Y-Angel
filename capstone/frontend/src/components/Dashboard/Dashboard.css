@@ -1,0 +1,32 @@
+.sidebarTitleIn {
+    height: 797px;
+}
+
+@media (max-width:873px){
+    .sidebarTitleIn {
+        height: 822px;
+    }
+}
+@media (max-width:819px){
+    .sidebarTitleIn {
+        height: 872px;
+    }
+}
+
+@media (max-width:700px){
+    .sidebarTitleIn {
+        height: auto;
+    }
+}
+
+.pb-186{
+    padding-bottom: 41px
+}
+
+.pb-1116{
+    padding-bottom: 558px
+}
+
+.sidebar3 {
+    height: 300px;
+}

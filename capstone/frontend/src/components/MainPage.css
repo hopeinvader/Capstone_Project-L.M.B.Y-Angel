@@ -1,0 +1,216 @@
+#intro {
+  background: url(10-best-view-in-hongkong.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+.full-height header .view {
+  height: 100%;
+}
+
+.view {
+  cursor: default;
+}
+
+.progress, .view {
+  position: relative;
+}
+
+.progress, .view, .waves-effect {
+  overflow: hidden;
+}
+
+.hm-gradient .full-bg-img {
+  background: rgba(42, 27, 161, 0.7);
+  background: linear-gradient(45deg, rgba(42, 27, 161, 0.44), rgba(29, 210, 177, 0.31) 100%);
+}
+
+.view .full-bg-img, .view .mask {
+  width: 100%;
+  height: 463px;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+}
+
+.align-items-center {
+  -webkit-box-align: center!important;
+  -ms-flex-align: center!important;
+  align-items: center!important;
+}
+
+.d-flex {
+  display: -webkit-box!important;
+  display: -ms-flexbox!important;
+  display: flex!important;
+}
+
+.containerM {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.full-height, .full-height body, .full-height header, .full-height header .view {
+  height: 100%;
+}
+
+.no-gutters {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.no-gutters>.col, .no-gutters>[class*=col-] {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.white-text {
+  color: #FFF!important;
+}
+
+.h1-responsive {
+  font-size: 150%;
+}
+
+.font-bold {
+  font-weight: 500;
+}
+
+#intro .h6 {
+  font-weight: 300;
+  line-height: 1.7;
+}
+
+.btn-white {
+  background-color: #fff!important;
+  color: #000!important;
+  font-size: .8rem;
+  padding: .85rem 2.13rem;
+  margin: 6px;
+  border-radius: 2px;
+  border: 0;
+  -webkit-transition: .2s ease-out;
+  transition: .2s ease-out;
+  white-space: normal!important;
+  cursor: pointer;
+}
+
+#team {
+  background: #F6F8FA
+}
+
+.imgMain {
+  height: 395px !important;
+}
+
+.pt-50 {
+  padding-top: 50px;
+}
+
+.cpb-3 {
+  padding-bottom: 2.5rem !important;
+}
+
+.far-3x {
+  font-size: 3em !important;
+  color: #55e68f!important
+}
+
+.far-4x {
+  font-size: 3em !important;
+}
+
+.msgColor {
+  color: #e89ee3 !important;
+}
+
+.about {
+  padding: 88px 0;
+}
+
+
+
+@media (max-width: 767.98px){
+  .about {
+      padding: 3rem 0 0;
+  }
+}
+
+.mb-15 {
+  font-size: 1.846rem;
+  line-height: 3.076rem;
+}
+
+@media (max-width: 767.98px){
+.mb-15 {
+    font-size: 1.692rem;
+    text-align: center;
+}
+}
+
+.input-group-prepend-sp {
+  width: auto !important;
+}
+
+@media (max-width: 360px){
+  .form-group-1 {
+    width: 270px !important;
+  }
+}
+
+.formGroup {
+  width: 47%;
+}
+
+.pdlr-1 {
+  padding-left: 1rem !important;
+  padding-bottom: 0px !important;
+}
+
+.mgr-26 {
+  margin-right: 26px;
+}
+
+@media (max-width: 991px){
+  .mgr-26{
+    margin-right: 19px;
+  }
+}
+
+@media (max-width: 767px){
+  .mgr-26{
+    margin-right: 15px;
+  }
+}
+@media (max-width: 517px){
+  .mgr-26{
+    margin-right: 12px;
+  }
+}
+@media screen and (max-width: 480px){
+  .form-group-1 {
+    width: 300px !important;
+  }
+  .mgr-26{
+    margin-right: 0px;
+  }
+}
+@media (max-width: 480px){
+  .btnSp{
+    width: 300px !important;
+  }
+  .pt-50 {
+    width: 350px;
+  }
+}
+@media (min-width: 1040px){
+  .col-md-5 {
+    height: 205px;
+  }
+}
+
+html {
+  letter-spacing: 0 !important;
+}
