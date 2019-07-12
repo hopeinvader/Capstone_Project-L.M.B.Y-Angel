@@ -4,14 +4,15 @@ L.M.B.Y(Let Me Be Your) Angel is my last project for 16 weeks bootcamp.
 
 ## Getting Started
 
-You need to install Node.js and Knex.js in globally your machine. [Node.js](https://nodejs.org/en/) [Knex.js](https://knexjs.org/)
+You need to install Node.js and Knex.js in globally your machine. [Node.js](https://nodejs.org/en/) and [Knex.js](https://knexjs.org/)
+
 You also need to start Postgres in your machine as well.
 Create data base in postgres, then go to backend folder, in terminal run
 ```
 knex migrate:latest
 ```
 This command help you to migrate tables.
-
+and
 Inside of backend folder, there is  extraCommand.sql file.
 Copy and paste everything to postgres, then you will have all of the tables and column you need.
 
