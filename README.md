@@ -1,6 +1,6 @@
 # Capstone_Project-L.M.B.Y-Angel
 
-L.M.B.Y(Let Me Be Your) Angel is my last project for 16 weeks bootcamp.
+L.M.B.Y Angel (Let Me Be Your Angel) is my last project started 13 weeks after beginning bootcamp.
 
 ## Getting Started
 
