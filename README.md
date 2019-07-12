@@ -12,8 +12,9 @@ Create data base in postgres, then go to backend folder, in terminal run
 knex migrate:latest
 ```
 This command help you to migrate tables.
-and
+
 Inside of backend folder, there is  extraCommand.sql file.
+
 Copy and paste everything to postgres, then you will have all of the tables and column you need.
 
 ### Installing
