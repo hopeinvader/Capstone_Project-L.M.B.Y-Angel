@@ -50,4 +50,4 @@ the front-end server must run at localhost:3000 back-end in localhost:8080
 
 ## Authors
 
-* **Jihyup Ryu** - *Initial work* - [PurpleBooth](https://github.com/JihyupRyu)
+* **Jihyup Ryu** - *Initial work* - [Jihyup Ryu](https://github.com/JihyupRyu)
