@@ -1,6 +1,6 @@
 # Capstone_Project-L.M.B.Y-Angel
 
-One Paragraph of project description goes here
+This is my last project for 16 weeks bootcamp.
 
 ## Getting Started
 
