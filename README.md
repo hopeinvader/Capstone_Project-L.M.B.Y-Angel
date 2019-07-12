@@ -4,7 +4,15 @@ L.M.B.Y(Let Me Be Your) Angel is my last project for 16 weeks bootcamp.
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+You need to install Node.js and Knex.js in globally your machine. You also need to start Postgres in your machine as well.
+Create data base in postgres, then go to backend folder, in terminal run
+```
+knex migrate:latest
+```
+This command help you to migrate tables.
+
+Inside of backend folder, there is  extraCommand.sql file.
+Copy and paste everything to postgres, then you will have all of the tables and column you need.
 
 ### Installing
 
