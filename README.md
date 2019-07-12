@@ -11,15 +11,15 @@ Create data base in postgres, then go to backend folder, in terminal run
 ```
 knex migrate:latest
 ```
-This command help you to migrate tables.
+This command is to help you migrate tables.
 
 Inside of backend folder, there is  extraCommand.sql file.
 
-Copy and paste everything to postgres, then you will have all of the tables and column you need.
+Copy and paste everything to postgres, then you will have all of the tables and columns you need.
 
 ### Installing
 
-To run this code, need to do npm install in frontend and backend folder first.
+To run this code, you need to do npm install in frontend and backend folder first.
 
 inside of frontend and backend folder
 ```
@@ -39,7 +39,7 @@ and then in frontend folder
 npm start or yarn start
 ```
 
-in back-end also need to create .env file to put DB name, username and password. For upload function, need to put AccessKey, secret access key and bucket of AWS S3 as well.
+in back-end you also need to create .env file to put DB name, username and password. For upload function, you need to put AccessKey, secret access key and bucket of AWS S3 as well.
 
 ```
 DB_NAME=''
