@@ -9,7 +9,6 @@ class Users {
 
     list(){
         let query = this.knex.select('id', 'email', 'password', 'entrepneurs_investors')
-        // .where('id', id)
             .from('users')
                 return query.then((rows)=>{
                     return rows
@@ -42,13 +41,7 @@ class Users {
                     let emailWrong = 'Email is Wrong!'
                     return emailWrong    
                 }
-            })
-
- 
-
-
-
-            
+            })            
         } else {
         }
     }
