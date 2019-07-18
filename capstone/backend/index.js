@@ -8,7 +8,6 @@ const config = require('./config');
 const app = express();
 const auth = authClass();
 
-//Upload Modules
 const Users = require('./Service/users');
 const AuthRouter = require('./Router/authRouter');
 const Entrepneurs = require('./Service/entrepneurs');
