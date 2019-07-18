@@ -15,16 +15,13 @@ class Investors {
     }
 
     getList(params){
-        console.log(params.id)
         let query = this.knex.select().from('investors')
             .where({"investors_id":params.id})
             return query
     }
 
     async addAB(info){
-        console.log('here?')
         var token = info.user
-        console.log(info)
         var decodeToken = jwt.decode(token, config.jwtSecret);
         if(decodeToken.id) {
             let users = this.knex.select("about", "maximum_amount", "minimum_amount").from("investors").where({"investors_id": decodeToken.id})
@@ -40,19 +37,15 @@ class Investors {
     }
 
     async addUCBL(info){
-        console.log(info)
         var token = info.userInfo
         var decodeToken = jwt.decode(token, config.jwtSecret);
         if(decodeToken.id) {
             let users = this.knex.select().from("investors").where({"investors_id": decodeToken.id})
             return await users.then( (res) => {
                 if(res.length > 0){
-                    console.log('here?')
-                    console.log(res)
                     let user = this.knex.select('name', 'category').from('investors').where({"investors_id": decodeToken.id}).update({"name": info.username, "logo": info.logo, "background_photo": info.bgImg, "timestamp":"now()"}).returning('id');
                     return user
                 } else {
-                    console.log('here')
                     return
                 }
             })
