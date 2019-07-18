@@ -3,8 +3,8 @@ const multer = require('multer');
 const multerS3 = require('multer-s3');
 
 aws.config.update({
-  secretAccessKey: '/8y60DONTONkiZzdhz/ieMkpDkFA9/NRJqOILBBv',
-  accessKeyId: 'AKIA2S7XCQBHLD2P4CFE',
+  secretAccessKey: '',
+  accessKeyId: '',
   region: 'ap-northeast-2'
 });
 
@@ -22,7 +22,7 @@ const upload = multer({
   fileFilter,
   storage: multerS3({
     s3,
-    bucket: 'cpshpupload',
+    bucket: '',
     acl: 'public-read',
     metadata: function (req, file, cb) {
       cb(null, {fieldName: 'TESTING_META_DATA!'});
