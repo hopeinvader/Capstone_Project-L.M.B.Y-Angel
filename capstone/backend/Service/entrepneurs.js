@@ -7,13 +7,10 @@ class Entrepneurs {
         this.knex = knex;
     }
 
-    //Get all of the item when Query happens
     list(){
         let query = this.knex.select('header', 'highlights', 'body')
             .from('summury')
                 return query.then((rows)=>{
-                    // return rows
-                    // console.log(rows)
                     return rows.map(r => ({
                         header: r.header,
                         highlights: r.highlights,
@@ -33,10 +30,8 @@ class Entrepneurs {
 
 
     add(summury){
-        console.log(summury)
         var token = summury.user
         var decodeToken = jwt.decode(token, config.jwtSecret);
-        // console.log(decodeToken.id)
         let query2 = this.knex
             .insert({
                 header: summury.summuryHeader,
@@ -48,17 +43,7 @@ class Entrepneurs {
                 return Promise.all(
                     rows.map(row=>{
                         let summuryUser = this.knex('entrepneurs').where({"entrepneurs_id": decodeToken.id}).update({"summury":row, "timestamp":"now()"}).returning('id');
-                        // let summuryUser = this.knex('entrepneurs').insert({"summury": results[0]}.where({"entrepneurs_id": decodeToken.id}))
                         return summuryUser
-                        // return users.then(reRows =>{
-                        //     reRows.map(reRow=>{
-                        //         console.log('working...?')
-                        //         console.log(reRow)
-                        //         console.log(row)
-                        //         let summuryUser = this.knex('entrepneurs').where({"entrepneurs_id": decodeToken.id}).update({"summury":row}).returning('id');
-                        //         return summuryUser
-                        //     })
-                        // })
                     })
                 )
                 
@@ -66,14 +51,12 @@ class Entrepneurs {
             .catch(err => {
                 throw new Error(err);
             })
-            // console.log(query2)
 
     }
 
     addP(product){
         var token = product.user
         var decodeToken = jwt.decode(token, config.jwtSecret);
-        // console.log(decodeToken.id)
         let query2 = this.knex
             .insert({
                 header: product.productHeader,
@@ -82,21 +65,10 @@ class Entrepneurs {
             .into('product')
             .returning('id')
             return query2.then(rows=>{
-                console.log('working here?')
                 return Promise.all(
                     rows.map(row=>{
                         let productUser = this.knex('entrepneurs').where({"entrepneurs_id": decodeToken.id}).update({"product":row, "timestamp":"now()"}).returning('id');
-                        // let summuryUser = this.knex('entrepneurs').insert({"summury": results[0]}.where({"entrepneurs_id": decodeToken.id}))
                         return productUser
-                        // return users.then(reRows =>{
-                        //     reRows.map(reRow=>{
-                        //         console.log('working...?')
-                        //         console.log(reRow)
-                        //         console.log(row)
-                        //         let summuryUser = this.knex('entrepneurs').where({"entrepneurs_id": decodeToken.id}).update({"summury":row}).returning('id');
-                        //         return summuryUser
-                        //     })
-                        // })
                     })
                 )
                 
@@ -104,7 +76,6 @@ class Entrepneurs {
             .catch(err => {
                 throw new Error(err);
             })
-            // console.log(query2)
 
     }
     addAD(advantage){
@@ -121,17 +92,7 @@ class Entrepneurs {
                 return Promise.all(
                     rows.map(row=>{
                         let productUser = this.knex('entrepneurs').where({"entrepneurs_id": decodeToken.id}).update({"advantage":row, "timestamp":"now()"}).returning('id');
-                        // let summuryUser = this.knex('entrepneurs').insert({"summury": results[0]}.where({"entrepneurs_id": decodeToken.id}))
                         return productUser
-                        // return users.then(reRows =>{
-                        //     reRows.map(reRow=>{
-                        //         console.log('working...?')
-                        //         console.log(reRow)
-                        //         console.log(row)
-                        //         let summuryUser = this.knex('entrepneurs').where({"entrepneurs_id": decodeToken.id}).update({"summury":row}).returning('id');
-                        //         return summuryUser
-                        //     })
-                        // })
                     })
                 )
                 
@@ -139,7 +100,6 @@ class Entrepneurs {
             .catch(err => {
                 throw new Error(err);
             })
-            // console.log(query2)
 
     }
     addM(motivation){
@@ -156,17 +116,7 @@ class Entrepneurs {
                 return Promise.all(
                     rows.map(row=>{
                         let productUser = this.knex('entrepneurs').where({"entrepneurs_id": decodeToken.id}).update({"motivation":row, "timestamp":"now()"}).returning('id');
-                        // let summuryUser = this.knex('entrepneurs').insert({"summury": results[0]}.where({"entrepneurs_id": decodeToken.id}))
                         return productUser
-                        // return users.then(reRows =>{
-                        //     reRows.map(reRow=>{
-                        //         console.log('working...?')
-                        //         console.log(reRow)
-                        //         console.log(row)
-                        //         let summuryUser = this.knex('entrepneurs').where({"entrepneurs_id": decodeToken.id}).update({"summury":row}).returning('id');
-                        //         return summuryUser
-                        //     })
-                        // })
                     })
                 )
                 
@@ -174,8 +124,6 @@ class Entrepneurs {
             .catch(err => {
                 throw new Error(err);
             })
-            // console.log(query2)
-
     }
     addT(messege){
         var token = messege.user
@@ -191,17 +139,7 @@ class Entrepneurs {
                 return Promise.all(
                     rows.map(row=>{
                         let productUser = this.knex('entrepneurs').where({"entrepneurs_id": decodeToken.id}).update({"toInvestors":row, "timestamp":"now()"}).returning('id');
-                        // let summuryUser = this.knex('entrepneurs').insert({"summury": results[0]}.where({"entrepneurs_id": decodeToken.id}))
                         return productUser
-                        // return users.then(reRows =>{
-                        //     reRows.map(reRow=>{
-                        //         console.log('working...?')
-                        //         console.log(reRow)
-                        //         console.log(row)
-                        //         let summuryUser = this.knex('entrepneurs').where({"entrepneurs_id": decodeToken.id}).update({"summury":row}).returning('id');
-                        //         return summuryUser
-                        //     })
-                        // })
                     })
                 )
                 
@@ -209,8 +147,6 @@ class Entrepneurs {
             .catch(err => {
                 throw new Error(err);
             })
-            // console.log(query2)
-
     }
 
     async addAB(info){
@@ -281,7 +217,6 @@ class Entrepneurs {
     }
 
     delete(params){
-        console.log(params)
         var token = params
         var decodeToken = jwt.decode(token, config.jwtSecret);
         let query = this.knex('entrepneurs')
@@ -291,7 +226,6 @@ class Entrepneurs {
     }
 
     deleteIn(params){
-        console.log(params)
         var token = params
         var decodeToken = jwt.decode(token, config.jwtSecret);
         let query = this.knex('investors')
